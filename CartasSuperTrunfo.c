@@ -28,7 +28,7 @@ int main(){
     scanf("%s",&cidade1);
 
     printf("População:" );
-    scanf("%d",&pessoas1);
+    scanf(" %u",&pessoas1);
 
     printf("Área:" );
     scanf("%f",&area1);
@@ -62,7 +62,7 @@ int main(){
     scanf("%s",&cidade2);
 
     printf("População:" );
-    scanf("%d",&pessoas2);
+    scanf("%u",&pessoas2);
 
     printf("Área:" );
     scanf("%f",&area2);
@@ -106,7 +106,7 @@ printf("Super Poder: Carta%d venceu\n",(poder1 > poder2)?1:2);
 
 if(poder1 > poder2){
     printf("Carta 1 é a vencedora com o Super Poder de %.2f\n",poder1);
-    {else}
+}else{
     printf("Carta 2 é a vencedora com o Super Poder de %.2f\n",poder2);
 }
 
