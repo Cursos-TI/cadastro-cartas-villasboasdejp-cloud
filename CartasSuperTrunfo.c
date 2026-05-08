@@ -49,7 +49,7 @@ int main(){
 
     printf("Super Poder:%.2f\n",poder1);
 
-// cartas 2
+//cartas 2
     printf("Carta 2: 2\n");
     
     printf("Estado:" );
@@ -104,6 +104,11 @@ printf("PIB per capita: Carta%d venceu\n",(capita1 > capita2) ?1:2);
 //Super Poder
 printf("Super Poder: Carta%d venceu\n",(poder1 > poder2)?1:2);
 
+if(poder1 > poder2){
+    printf("Carta 1 é a vencedora com o Super Poder de %.2f\n",poder1);
+    {else}
+    printf("Carta 2 é a vencedora com o Super Poder de %.2f\n",poder2);
+}
 
 return 0;
 }
