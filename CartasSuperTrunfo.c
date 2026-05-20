@@ -5,7 +5,7 @@ int main(){
     char nomestado1, nomestado2;
     char codigo1, codigo2;
     char cidade1, cidade2;
-    unsigned long int pessoas1, pessoas2;
+    unsigned int pessoas1, pessoas2;
     float area1, area2;
     float pib1, pib2;
     int p1, p2;
