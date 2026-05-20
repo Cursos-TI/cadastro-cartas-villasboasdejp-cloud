@@ -12,6 +12,7 @@ int main(){
     float densidade1, densidade2;
     float capita1, capita2;
     float poder1, poder2;
+    int opcao;
 
 
 
@@ -82,6 +83,70 @@ int main(){
         poder2 = (float)pessoas2 + area2 + pib2 + p2 + (1.0/densidade2) + capita2;
 
     printf("Super Poder:%.2f\n",poder2);
+
+    // Menu
+    printf("===ESCOLHA O ATRIBUTO PARA COMPARAR===\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Ponto Turístico\n");
+    printf("5 - Super Poder\n");
+    printf("Digite a sua opção:");
+    scanf("%d, &opcao");
+
+    switch(opcao){
+        case 1:
+            printf("\n---Comparação de População---\n");
+            if (pessoas1>pessoas2){
+                printf("Carta 1 venceu na População!\n");
+            }else if (pessoas2>pessoas1){
+
+            }else {
+                printf("Empate na População!\n");
+            }
+            break;
+       case 2:
+            printf("\n---Comparação da Área---\n");
+            if (area1>area2){
+                printf("Carta 1 venceu na Área!\n");
+            }else if (area2>area1){
+
+            }else {
+                printf("Empate na Área!\n");
+            }
+            break;
+        case 3:
+            printf("\n---Comparação do Pib---\n");
+            if (pib1>pib2){
+                printf("Carta 1 venceu no Pib!\n");
+            }else if (pib2>pib1){
+
+            }else {
+                printf("Empate no Pib!\n");
+            }
+            break;
+       case 4:
+            printf("\n---Comparação de Ponto Turístico---\n");
+            if (p1>p2){
+                printf("Carta 1 venceu no Ponto Turístico\n");
+            }else if (p2>p1){
+
+            }else {
+                printf("Empate na Ponto Turístico\n");
+            }
+            break;
+       case 5:
+            printf("\n---Comparação de Super Poder---\n");
+            if (poder1>poder2){
+                printf("Carta 1 venceu no Super Poder\n");
+            }else if (poder2>poder1){
+
+            }else {
+                printf("Empate no uper Poder\n");
+            }
+            break;
+            
+    }
 
  //Comparação de populaçao
 printf("População: Carta%d venceu\n",( pessoas1 > pessoas2) ?1:2);
